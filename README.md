@@ -4,6 +4,8 @@ Our goal is to build stable and reliable systems.
 
 In the real world, good coding is not about writing fancy code, but rather about creating stable and easy to maintain applications.
 
+Simple code 
+
 **1 -   The code must be - SIMPLE !**
 
 	Questions that I need to ask myself when I read the code: 
@@ -18,7 +20,9 @@ In the real world, good coding is not about writing fancy code, but rather about
 
 --------------------------------------------------------------------
 
-**2 - Names are the most important thing in the system:**
+Names
+
+** 2 - Names are the most important thing in the system:**
 
 A - All name must be meaningful 
 
@@ -30,18 +34,5 @@ Examples:
 |  type | Bad  | Good  |
 |---|---|---|
 | File name  | index.blade.php  | agent_index.blade.php  |
-|   |   |   |
+|  File name 2 | AveragePositionController  | AgentAveragePositionController  |
 
-File name 2
-AveragePositionController
-
-
-AgentAveragePositionController
-
-
-Variables 
- list 
-Js: agentList , php: agents_list 
-Function 
-getData 
-GetUserData 
