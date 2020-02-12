@@ -36,3 +36,130 @@ Examples:
 | File name  | index.blade.php  | agent_index.blade.php  |
 |  File name 2 | AveragePositionController  | AgentAveragePositionController  |
 
+B -  Names can not be ambiguous
+
+
+
+Note about names and search:
+
+We use the Editor search all over the project, ALL THE TIME! 
+Good names are the ones that help us to understand quickly what this code does.
+
+If we look at your code and see ambiguous names, we will reject your code.
+
+
+
+3 - Commented code. 
+
+Every line of code should to be commented.  
+
+( Except if it log , or soper trivial )
+
+Examples: 
+
+// we are getting the active users to var 
+
+$active_users = User::where(‘active’,true)->get(); 
+
+
+4 - Logs 
+
+We are working with loges. We use the logs to find where the bug happens later. In PHP and in Js  - we can find where to start checking very fast with the logs. ( copy the log line and search for it in the project )
+
+PHP : every process or big move must be on info level: 
+
+Example: 
+Log::info(‘start billing process’) 
+
+Log::debug(‘Get the agents’ )
+
+On JS : 
+Console log for every important line of code  !
+
+
+
+5 - We do not save keyboard strokes!  
+
+No short versions,  no kids stuff !!  We never save keystrokes, even if it is not necessary for the code, or make the code longer ! 
+
+Bad : 
+
+(Agent::get())? True: false ; 
+
+
+Good: 
+
+$all_agents = Agent::get();
+
+if(!empty($all_agents)){
+
+Return true; 
+
+}else{
+
+Return false; 
+} 
+
+
+
+ 
+
+======================================================
+
+Coding Standards
+
+PHP 
+
+Var  = $name_of_var    ( all lowercase with underscore ) 
+
+Class -   ClassName - ( first word, capital - no space between words )
+
+File name :  file_name.php     ( all lowercase with underscore ) 
+
+
+
+HTML 
+
+Class:      name-of-class  
+
+ID :      name-of-id    
+
+Order class - id :  <p  class=”some-class”  id=”some-id” > 
+
+
+Js
+
+Var : camelCase 
+
+
+================================================================
+
+When you finish design work on html / css  please check: 
+
+HTML 
+
+1 ) No spelling errors in the code
+
+
+2) All html tags are closed 
+
+3) No extra HTMl tags in code. 
+
+4) All the html tag are the right one for the task. ( if you not sure, please consult me). 
+
+5) If the part that you are working on has textual typography, we need to be sure to use the appropriate hierarchy. H1 -> h2 -> article -> p - span and so on. 
+
+6) All the images have alt attribute. 
+
+7) images have informative names, with underscore only ( no hyphen sign) .
+
+8) if the image is big, then we need to set the right size of image to every width screen. 
+
+9) All images have to be in the size that they are appearing in the page. 
+
+If the image on screen is 100 px * 100 px  , then the size of image must be 100px * 100px. 
+
+10) All images need to be reduced  weight as much as we can without damaging the quealty. If you are not sure, then please ask the designer what to do about it. 
+
+
+
