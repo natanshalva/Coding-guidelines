@@ -1,10 +1,10 @@
-###Coding-guidelines
+## Coding-guidelines
 
 Our goal is to build stable and reliable systems. 
 
 In the real world, good coding is not about writing fancy code, but rather about creating stable and easy to maintain applications.
 
-Simple code 
+## Simple code 
 
 **1 -   The code must be - SIMPLE !**
 
@@ -20,7 +20,7 @@ Simple code
 
 --------------------------------------------------------------------
 
-Names
+## Names
 
 **2 - Names are the most important thing in the system:**
 
@@ -49,7 +49,7 @@ If we look at your code and see ambiguous names, we will reject your code.
 --------------------------------------------------------------------------------------
 
 
-**3 - Commented code. 
+## Commented code. 
 
 Every line of code should to be commented.  
 
@@ -63,7 +63,7 @@ $user = User::where('id',98798723)->first();
 
 ------------------------------------------------------------------------
 
-**4 - Logs 
+## Logs 
 
 We are working with loges. We use the logs to find where the bug happens later. In PHP and in Js  - we can find where to start checking very fast with the logs. ( copy the log line and search for it in the project )
 
@@ -108,7 +108,7 @@ if(!empty($all_agents)){
 
 ======================================================
 
-**Coding Standards
+## Coding Standards
 
 **PHP 
 
