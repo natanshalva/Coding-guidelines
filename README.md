@@ -22,7 +22,7 @@ Simple code
 
 Names
 
-** 2 - Names are the most important thing in the system:**
+**2 - Names are the most important thing in the system:**
 
 A - All name must be meaningful 
 
@@ -36,33 +36,34 @@ Examples:
 | File name  | index.blade.php  | agent_index.blade.php  |
 |  File name 2 | AveragePositionController  | AgentAveragePositionController  |
 
-B -  Names can not be ambiguous
-
+**B -  Names can not be ambiguous
 
 
 Note about names and search:
 
-We use the Editor search all over the project, ALL THE TIME! 
+We use the Editor search all over the project, **ALL THE TIME!**
 Good names are the ones that help us to understand quickly what this code does.
 
 If we look at your code and see ambiguous names, we will reject your code.
 
+--------------------------------------------------------------------------------------
 
 
-3 - Commented code. 
+**3 - Commented code. 
 
 Every line of code should to be commented.  
 
-( Except if it log , or soper trivial )
+( Except if it log , or super trivial )
 
 Examples: 
 
-// we are getting the active users to var 
+// find the user from the DB
 
-$active_users = User::where(‘active’,true)->get(); 
+$user = User::where('id',98798723)->first(); 
 
+------------------------------------------------------------------------
 
-4 - Logs 
+**4 - Logs 
 
 We are working with loges. We use the logs to find where the bug happens later. In PHP and in Js  - we can find where to start checking very fast with the logs. ( copy the log line and search for it in the project )
 
@@ -74,13 +75,14 @@ Log::info(‘start billing process’)
 Log::debug(‘Get the agents’ )
 
 On JS : 
-Console log for every important line of code  !
-
+Console log for **every** important line of code  !
 
 
 5 - We do not save keyboard strokes!  
 
 No short versions,  no kids stuff !!  We never save keystrokes, even if it is not necessary for the code, or make the code longer ! 
+
+Examples: 
 
 Bad : 
 
@@ -93,11 +95,11 @@ $all_agents = Agent::get();
 
 if(!empty($all_agents)){
 
-Return true; 
+	Return true; 
 
 }else{
 
-Return false; 
+	Return false; 
 } 
 
 
@@ -106,9 +108,9 @@ Return false;
 
 ======================================================
 
-Coding Standards
+**Coding Standards
 
-PHP 
+**PHP 
 
 Var  = $name_of_var    ( all lowercase with underscore ) 
 
@@ -118,7 +120,7 @@ File name :  file_name.php     ( all lowercase with underscore )
 
 
 
-HTML 
+**HTML 
 
 Class:      name-of-class  
 
